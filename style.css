@@ -2,10 +2,11 @@ html{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-size: 16px;
 }
 
 body{
- background-color: rgb(175, 85, 100);
+ background-color: hsl(0, 100%, 74%);
  background-image: url(bg-intro-desktop.png);
 }
 
@@ -19,21 +20,35 @@ main{
  height: 100vh;
  display: flex;
  flex-direction: row;
- border: 5px solid grey;
 }
 
 .left{
- border: 5px solid green;
  color: white;
 }
 
-.right{
- border-radius: 10px;
- border: 5px solid blue;
+/* .right{
+ 
+} */
+
+.right-top{
+ border-radius: 5px;
+ background-color: blue;
+ padding: 10px;
+ box-shadow: 0px 4px 0px 0px  hsl(246, 25%, 77%);
 }
 
-.form{
+.right-bottom{
+ border-radius: 10px;
+ padding:20px;
  background-color: white;
+}
+button{
+ background-color: hsl(154, 59%, 51%);
+ border: none;
+}
+
+.right-bottom strong {
+ color: hsl(0, 100%, 74%);
 }
 
 @media screen and (max-width: 800px) {
