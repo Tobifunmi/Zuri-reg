@@ -1,0 +1,49 @@
+html{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color: rgb(175, 85, 100);
+ background-image: url(bg-intro-desktop.png);
+}
+
+main{
+ width: 50%;
+ margin: auto;
+ padding-left: 70px;
+ padding-right: 70px;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ display: flex;
+ flex-direction: row;
+ border: 5px solid grey;
+}
+
+.left{
+ border: 5px solid green;
+ color: white;
+}
+
+.right{
+ border-radius: 10px;
+ border: 5px solid blue;
+}
+
+.form{
+ background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+main {
+  /* width: 50%; */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ }
+}
