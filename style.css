@@ -1,64 +1,81 @@
-html{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-size: 16px;
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
-body{
- background-color: hsl(0, 100%, 74%);
- background-image: url(bg-intro-desktop.png);
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(bg-intro-desktop.png);
 }
 
-main{
- width: 50%;
- margin: auto;
- padding-left: 70px;
- padding-right: 70px;
- justify-content: center;
- align-items: center;
- height: 100vh;
- display: flex;
- flex-direction: row;
-}
-
-.left{
- color: white;
-}
-
-/* .right{
- 
-} */
-
-.right-top{
- border-radius: 5px;
- background-color: blue;
- padding: 10px;
- box-shadow: 0px 4px 0px 0px  hsl(246, 25%, 77%);
-}
-
-.right-bottom{
- border-radius: 10px;
- padding:20px;
- background-color: white;
-}
-button{
- background-color: hsl(154, 59%, 51%);
- border: none;
-}
-
-.right-bottom strong {
- color: hsl(0, 100%, 74%);
-}
-
-@media screen and (max-width: 800px) {
 main {
-  /* width: 50%; */
+  width: 50%;
   margin: auto;
+  padding-left: 70px;
+  padding-right: 70px;
   justify-content: center;
   align-items: center;
   height: 100vh;
   display: flex;
-  flex-direction: column;
- }
+  flex-direction: row;
+}
+
+.left {
+  color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* .right {
+  border: 5px solid;
+} */
+
+.right-top {
+  color: white;
+  border-radius: 5px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 10px;
+  box-shadow: 0px 4px 1px 0px grey;
+}
+
+.right-bottom {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
+
+input {
+  border-color: hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+button {
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+}
+
+.right-bottom p {
+  color: hsl(246, 25%, 77%);
+}
+.right-bottom strong {
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    /* width: 50%; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
